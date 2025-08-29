@@ -1,0 +1,64 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+html, body, #root{
+  height: 100%;
+}
+
+
+#root{
+  background-color: #4f4f4f;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+}
+
+h1, span {
+  font-size: 48px;
+  font-weight: bolder;
+}
+
+.buttons button{
+  width: 150px;
+  background-color: #222;
+  padding: 15px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.buttons button:hover{
+  background-color: rgb(58, 58, 58);
+  transition: 0.3s;
+  transform: scale(120%);
+  border: 1px solid white;
+}
+
+.buttons{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 35px;
+}
+
+#reactlogo{
+  width: 8%;
+  filter: drop-shadow(0 0 10px rgb(153, 0, 255));
+  transition-duration: 100000s;
+}
+#root:hover{
+  #reactlogo{
+  transition-duration: 100000s;
+  transform: scale(120%);
+  transform: rotateZ(12000000deg);
+  } 
+}
