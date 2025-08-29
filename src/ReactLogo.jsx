@@ -1,7 +1,9 @@
+import logo from "./assets/react.svg"
+
 export function ReactLogo(){
 
 
     return(
-        <img id="reactlogo" src="src\assets\react.svg" alt="React Logo" />
+        <img id="reactlogo" src={logo} alt="React Logo" />
     )
 }
