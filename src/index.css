@@ -4,7 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  text-transform: uppercase;
   color: white;
   font-family: 'Courier New', Courier, monospace;
 }
@@ -54,11 +53,17 @@ h1, span {
   width: 8%;
   filter: drop-shadow(0 0 10px rgb(153, 0, 255));
   transition-duration: 100000s;
+  animation: girar 15s linear infinite;
 }
-#root:hover{
-  #reactlogo{
-  transition-duration: 100000s;
-  transform: scale(120%);
-  transform: rotateZ(12000000deg);
-  } 
+
+@keyframes girar {
+  0% { 
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    transform: rotate(180deg) scale(0.5);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
 }
